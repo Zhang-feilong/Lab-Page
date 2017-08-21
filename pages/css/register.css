@@ -116,3 +116,18 @@ button {
     -webkit-transform: rotate(45deg); 
     -ms-transform: rotate(45deg);
 }
+.footer {
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+.login {
+    display: none;
+    margin-top: 25px;
+    font-size: 14px;
+}
+.login a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: yellow;
+}

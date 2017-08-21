@@ -7,6 +7,7 @@ $(document).ready(function() {
         var loginname = $(this).find('.loginname').val();
         var password2 = $(this).find('.password2').val();
         var password = $(this).find('.password').val();
+        var email = $(this).find('.email').val();
         var department = $(this).find('select  option:selected').val();
         if(realname == '') {
             $(this).find('.error').fadeOut('fast', function(){
@@ -17,18 +18,27 @@ $(document).ready(function() {
             });
             return false;
         }
-        if(loginname == '') {
+        // if(loginname == '') {
+        //     $(this).find('.error').fadeOut('fast', function(){
+        //         $(this).css('top', '96px');
+        //     });
+        //     $(this).find('.error').fadeIn('fast', function(){
+        //         $(this).parent().find('.password').focus();
+        //     });
+        //     return false;
+        // }
+        if(email == '') {
             $(this).find('.error').fadeOut('fast', function(){
-                $(this).css('top', '96px');
+                $(this).css('top', '165px');
             });
             $(this).find('.error').fadeIn('fast', function(){
-                $(this).parent().find('.password').focus();
+                $(this).parent().find('.email').focus();
             });
             return false;
         }
         if(password == ''){
             $(this).find('.error').fadeOut('fast', function(){
-                $(this).css('top', '165px');
+                $(this).css('top', '234px');
             });
             $(this).find('.error').fadeIn('fast', function(){
                 $(this).parent().find('.password').focus();
@@ -37,7 +47,7 @@ $(document).ready(function() {
         }
         if(password2 == ''){
             $(this).find('.error').fadeOut('fast', function(){
-                $(this).css('top', '234px');
+                $(this).css('top', '303px');
             });
             $(this).find('.error').fadeIn('fast', function(){
                 $(this).parent().find('.password2').focus();
@@ -46,7 +56,7 @@ $(document).ready(function() {
         }
         if(department == ''){
             $(this).find('.error').fadeOut('fast', function(){
-                $(this).css('top', '303px');
+                $(this).css('top', '372px');
                 alert("请选择平台！");
             });
             $(this).find('.error').fadeIn('fast', function(){
@@ -65,6 +75,9 @@ $(document).ready(function() {
             });
             return false;
         }
+        // $(".login").css("display","block");
+        else
+         window.location.href ="../htmls/page.html";
     });
 
     $('.all form .realname, .all form .loginname').keyup(function(){

@@ -10,9 +10,10 @@
 <body>
 	<div class="all">
 		<h1>Register</h1>
-		<form action="" method="post">
+		<form action="register.html" method="post">
 			<input type="text" name="realname" class="realname" placeholder="用 户 名">
 			<input type="text" name="loginname" class="loginname" placeholder="昵    称">
+			<input type="email" name="email" class="email" placeholder="Email">
             <input type="password" name="password" class="password" placeholder="设置密码">
             <input type="password" name="password2" class="password2" placeholder="确认密码">
             <select name="department" id="department">
@@ -25,6 +26,7 @@
             <button type="submit">OK</button>
             <div class="error"><span>+</span></div>
 		</form>
+		<span class="login">你已有账号，可直接 <a href="page.html">登录</a></span>
 	</div>
 	<div class="footer">©重邮移动互联网应用工程研究中心</div>
 <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
