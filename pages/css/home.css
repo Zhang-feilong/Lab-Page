@@ -9,23 +9,15 @@ body {
 
 .header {
 	width:100%;
-	height: 100px;
-	/*background: #111;*/
+	height: 80px;
+
 }
 .content {
 	width: 90%;
-	height: 100px;
-	/*background: red;*/
+	height: 80px;
 	margin: 0 auto;
 }
 
-.content img {
-	margin-top: 25px;
-	width: 100px;
-	height: 50px;
-	margin-right: 20px;
-	float: left;
-}
 
 .nav {
 	height: 100%;
@@ -36,9 +28,8 @@ body {
 .nav ul li {
 	list-style: none;
 	float: left;
-	width: 16%;
+	margin-right: 10px;
 	height: 70%;
-	/*background: green;*/
 	text-align: center;
 	font-weight: 400;
 	font-size: 18px;
@@ -65,73 +56,53 @@ body {
 .data_box {
 	position: relative;
 	margin-top: 100px;
-	height: 500px;
-	width: 60%;
+	height: 600px;
+	width: 100%;
 	margin: 0 auto;
 	border: 1px solid #DEDEDE;
 	background: #fff;
 }
-@media only screen and (max-width: 360px) {
-    .data_box {
-    	position: relative;
-		margin-top: 50px;
-		height: 400px;
-		width: 60%;
-		margin: 0 auto;
-		border: 1px solid #DEDEDE;
-		background: #fff;
-	}
-	#file_area {
-	position: absolute;
-	margin: 0 auto;
-	border: 1px solid #DEDEDE;
-	width: 88%;
-	height: 80%;
-	overflow: hidden;
-	}
-
-	.bar {
-	position: absolute;
-	right: 20px;
-	top: 420px;
-	margin-right: 50px;
-	margin-top: 50px;
-	background: #999;
-}
-}
 
 #file_area {
-	position: absolute;
 	margin: 0 auto;
 	border: 1px solid #DEDEDE;
 	width: 88%;
 	height: 80%;
-	overflow: hidden;
 }
 .title {
-	height: 47px;
+	height:60px;
     border-bottom: 1px #EEE solid;
 }
-.bar {
-	position: absolute;
-	right: 40px;
-	top: 420px;
-	margin-right: 50px;
-	margin-top: 50px;
-	background: #999;
+
+h3 {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline-block;
 }
 
-.file_list li {
-	list-style: none;
-    vertical-align: bottom;
-    height: 20%;
-    padding: 6px 0 2px 5px;
-    text-align: left;
-    margin-right: 50px;
-    margin-left: 50px;
+.up {
+	position: relative;
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
     overflow: hidden;
+    vertical-align: middle;
 }
-.ti {
-    padding: 0 0 0 13px;
-    background: url(../images/pic_9.jpg) no-repeat left center;
+
+
+#btn {
+	background-color: #dbdfd6 !important;
+    color: #000 !important;
+    border: 1px solid #dbdfd6 !important;
+    width: 150px !important;
+    border-radius: 0 !important;
+}
+#file {
+	position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 300px \9;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
 }
