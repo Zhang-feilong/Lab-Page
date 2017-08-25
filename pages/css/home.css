@@ -3,12 +3,14 @@
 }
 body {
 	background: url("../images/bg.jpg");
+	/*background: #f9f9f9;*/
 	font-size: 14px;
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 
 .header {
-	width:100%;
+	max-width: 1080px;
+	margin: 0 auto;
 	height: 80px;
 
 }
@@ -28,7 +30,8 @@ body {
 .nav ul li {
 	list-style: none;
 	float: left;
-	margin-right: 10px;
+	width: 16%;
+	margin-right: 5px;
 	height: 70%;
 	text-align: center;
 	font-weight: 400;
@@ -101,8 +104,48 @@ h3 {
 	position: absolute;
     right: 0;
     top: 0;
-    font-size: 300px \9;
+    font-size: 300px ;
     height: 100%;
     opacity: 0;
     cursor: pointer;
+}
+
+.file_list {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.middle {
+	max-width: 1080px;
+	margin:0 auto;
+	height: 250px;
+	/*background: red;*/
+}
+
+.my_infor {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	border: 1px solid #DEDEDE;
+	background: #fff;
+	padding-left: 10px;
+}
+.msg {
+	padding-bottom: 200px;
+	max-width: 1080px;
+	text-align: left;
+	padding-left: 100px;
+	background: #fff;
+}
+.msg p {
+	height: 50px;
+	line-height: 50px;
+}
+
+.msg p span {
+	line-height: 50px;
+	font-size: 20px;
+	color: 
 }

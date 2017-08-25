@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-    $('.all form').submit(function(){
+    $('#findpassword').submit(function(){
         var realname = $(this).find('.realname').val();
         var email = $(this).find('.email').val();
         if(realname == '') {
@@ -10,7 +9,6 @@ $(document).ready(function() {
             $(this).find('.error').fadeIn('fast', function(){
                 $(this).parent().find('.realname').focus();
             });
-            return false;
         }
         if(email == '') {
             $(this).find('.error').fadeOut('fast', function(){
@@ -19,11 +17,20 @@ $(document).ready(function() {
             $(this).find('.error').fadeIn('fast', function(){
                 $(this).parent().find('.email').focus();
             });
-            return false;
         }
-    });
-
-    $('.all form .realname, .all form .email').keyup(function(){
-        $(this).parent().find('.error').fadeOut('fast');
-    });
+     $.ajax({
+            type:"POST",
+            url:"api/member/findPassword",
+            data:$("#findpassword").serialize(),
+            success:function(data) {
+                if(typeof data == 'string'){
+                    data = JSON.parse(data);
+                }
+               if(data.code == 200){
+                    alert(data.obj);
+               }
+            }
+        });
+    return false;
+    });  
 });
